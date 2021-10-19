@@ -298,10 +298,11 @@ body{
 	position: relative;
 }
 h1{
-	font-size: 6em;
+	font-size: 4em;
+	/*font-size: 6em;*/
 }
 p {
-    font-size: 3em;
+    font-size: 1em;
     margin: 1em 0;
 }
 .intro p{
