@@ -15,8 +15,8 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('#fullpage').fullpage({
-              sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-              anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+              sectionsColor: ['#1bbc9b'  , '#4BBFC3'   , '#7BAABE'  ,'#7BDDBE'    , '#0d878d'    ],
+              anchors:       ['firstPage', 'secondPage', 'thirdPage', 'fourthPage',  'fifthPage'],
               menu: '#menu',
             });
         });
@@ -29,34 +29,50 @@
 <ul id="menu">
     <li data-menuanchor="firstPage" class="active"><a href="#firstPage">About</a></li>
     <li data-menuanchor="secondPage"><a href="#secondPage">Calendar</a></li>
-    <li data-menuanchor="3rdPage"><a href="#3rdPage">Photos</a></li>
+    <li data-menuanchor="thirdPage"><a href="#thirdPage">Lid Worden</a></li>
+    <li data-menuanchor="fourthPage"><a href="#fourthPage">Club Regels</a></li>
+    <li data-menuanchor="fifthPage"><a href="#fifthPage">Photos</a></li>
 </ul>
 
 <div id="fullpage">
     <div class="section active" id="section0">
-        <h1>Leuven Knights Cricket Club</h1>
-        <p>LKCC is a group of highly enthusiastic people.</p>
-        <p class="introimg">&darr;&#9636;&darr;</p>
+        <div class="slide" id="slide_alg">
+            <div class="intro">
+                <h1>Algemene Informatie</h1>
+                <p>General information about the club</p>                
+            </div>
+        </div>
+        <div class="slide" id="slide_geschiedenis">
+            <h1>Geschiedenis</h1>
+			<p>History of the club</p>
+        </div>        
     </div>
     <div class="section" id="section1">
         <div class="slide" id="slide1">
             <div class="intro">
                 <h1>Calendar</h1>
-                
+                <p>Match schedule of the club</p>    
             </div>
         </div>
-        <div class="slide" id="slide2">
-            <h1>Calendar</h1>
-			<p>You can also scroll left or right on this screen</p>
-        </div>
-
     </div>
     <div class="section" id="section2">
+        <div class="intro">
+            <h1>Lid Worden</h1>
+            <p>Form to fill.</p>
+        </div>
+    </div>    
+    <div class="section" id="section3">
+        <div class="intro">
+            <h1>Club Regels</h1>
+            <p>List of rules of the club.</p>
+        </div>
+    </div>
+    <div class="section" id="section4">
         <div class="intro">
             <h1>Photos</h1>
             <p>You will find LKCC photos here.</p>
         </div>
-    </div>
+    </div>    
 </div>
 
 </body>
